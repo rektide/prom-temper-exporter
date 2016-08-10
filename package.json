@@ -1,6 +1,6 @@
 {
   "name": "prom-temper-exporter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Temperature Prometheus.io exporters for TEMPer1 & 2 USB units.",
   "main": "prom-temper-exporter.js",
   "scripts": {
