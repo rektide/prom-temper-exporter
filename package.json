@@ -1,0 +1,23 @@
+{
+  "name": "prom-temper-exporter",
+  "version": "1.0.0",
+  "description": "Temperature Prometheus.io exporters for TEMPer1 & 2 USB units.",
+  "main": "prom-temper-exporter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "prom-temper-exporter": "./prom-temper-exporter.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://archive.voodoowarez.com/prom-temper-exporter"
+  },
+  "keywords": ["temperature", "datalogging", "prometheus", "prometheus.io", "metrics"],
+  "author": "rektide de la faye",
+  "license": "X",
+  "dependencies": {
+    "memoizee": "^0.4.1",
+    "temper1": "0.0.7"
+  }
+}
