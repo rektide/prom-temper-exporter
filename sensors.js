@@ -61,9 +61,11 @@ function _temperPromise( devicePath){
 		// producing a promise
 		return new Promise(function( res, rej){
 			// of the `device` temperature
-			temper.readTemperature( devicePath, function( err, temp){
+			temper.readTemperature( devicePath, function( err, temp, temp2){
 				if( err){
 					rej( err)
+				}else if(temp2){
+					res({ temp: temp, temp2: temp2, path: devicePath})
 				}else{
 					res({ temp: temp, path: devicePath})
 				}
